@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard - niyukti.com</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script>
+        function preloaderRemove(){
+            const newFunc = () =>{
+                document.getElementById('preloader-img').style.display = 'none';
+            } 
+            setTimeout(newFunc, 500);
+            
+        }
+    </script>
+</head>
+<body onload="preloaderRemove()">
+
+     <!-- Preloader Section Starts here -->
+     <section class="preloader" id= "preloader-img"></section>
+     <!-- Preloader Section ends here -->
+
+    <!-- Navigation bar section starts here -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="./index.html"><img src="images/Niyukti Logo Main.png" alt="niyukti-logo"></a>
+        </div>
+        <div class="search-bar">
+            <form>
+                <input type = "text" name = "search" id = "search" placeholder = "&#x1F50DSearch your query">
+            </form>
+        </div>
+        <div class="notif">
+            <img src="images/notif-icon.png" alt="notification-icon">
+            <div class="red-dot">
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="images/account-picture.png" alt="user-image" align="center">
+            Hey Akshay!
+        </div>
+    </div>
+    <!-- Navigation bar section ends here -->
+
+    <div class="wrapper">
+        <div class="side-lt">
+            <div class="profile-section">
+                <img src="images/account-picture.png" alt="user-profile-image">
+                <span>Akshay Kumar</span>
+                <span id="profile-badge">Client Profile</span>
+                <span id="social">Social Media</span>
+            </div>
+            <div class="impor-links">
+                    <div class="box">Dashboard</div>
+                    <div class="box">Your Profile</div>
+                    <div class="box">Revenue</div>
+                    <div class="box">Join Courses</div>
+                    <div class="box">Help & Support</div>
+                    <div class="box">Log Out</div>
+            </div>
+        </div>
+        <div class="dashboard-container">
+            <span style="font-size: 1.3em; font-family:bytefont-bold;">Dashboard</span>
+            <span class="sml-desc">Check your activities, clients details and projects you are working on</span>
+            <div class="dashboard-wrap">
+                <div class="recent-project">
+                    Currently Working on
+                    <span class="project-title">John Doe's Project</span>
+                    <span class="project-desc">
+                        Create a webpage for Our Company “Business Analytica”
+                    </span>
+                    <div class="knowledge-req">
+                        Knowledge Requirement
+                        <div class="wrap-req">
+                            <div class="box">HTML</div>
+                            <div class="box">CSS</div>
+                            <div class="box">JavaScript</div>
+                            <div class="box">Adobe XD</div>
+                        </div>
+                        
+                    </div>
+                    <div class="project-details">
+                        <div class="total">Total Cost<br><br><span>$300</span></div>
+                        <div class="released">Payment Released<br><br><span>$75</span></div>
+                        <button>&rarr;</button>
+                    </div>
+                </div>
+                <div class="dashboard-graph">
+                    <img src="images/dashboard-graph-img.png" alt="dashboard-graph-image">
+                </div>
+            </div>
+            <div class="previous-projects">
+                <div class="previous-project-wrapper">
+                    <div class="previous-title">Previous Projects</div>
+                    <div class="show-more">Show More</div>
+                </div>
+                <div class="projects">
+                    <div class="projects-title">Create a poster design</div>
+                    <div class="date">23/06/2021</div>
+                    <div class="time">10:00</div>
+                    <div class="cost">$200</div>
+                    <div class="details">...</div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="projects">
+                    <div class="projects-title">Create a poster design</div>
+                    <div class="date">23/06/2021</div>
+                    <div class="time">10:00</div>
+                    <div class="cost">$200</div>
+                    <div class="details">...</div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="projects">
+                    <div class="projects-title">Create a poster design</div>
+                    <div class="date">23/06/2021</div>
+                    <div class="time">10:00</div>
+                    <div class="cost">$200</div>
+                    <div class="details">...</div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="projects">
+                    <div class="projects-title">Create a poster design</div>
+                    <div class="date">23/06/2021</div>
+                    <div class="time">10:00</div>
+                    <div class="cost">$200</div>
+                    <div class="details">...</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="side-rt">
+            <div class="revenue-badge">
+                Total Revenue
+                <span class="revenue-amount">$135,000</span>
+                <div class="revenue-badge-wrapper">
+                    <div>
+                        <span>
+                            Pending 
+                        </span>
+                        $2,300
+                    </div>
+                    
+                    <div>
+                        <span>
+                            Under Review 
+                        </span>
+                        $250
+                    </div>
+                </div>
+            </div>
+            <div class="notification-field">
+                <div class="notif-active">
+                    Recent notifications <div class="red-dot"></div>
+                </div>
+                <div class="notification-msg" id="first-msg">Shankar Jay Kishan has released payment</div>
+                <div class="notification-msg">A message from Rayan S.</div>
+                <div class="notification-msg">An Amount of $200 credited to your account</div>
+            </div>
+            <div class="dashboard-flower-img">
+                <img src="images/flower-img-dashboard.png" alt="dashboard-flower-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">All rights reserved to niyukti.com - &COPY; Copytight 2021</div>
+</body>
+</html>

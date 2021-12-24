@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyukti - New Youth Foundation</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="shortcut icon" href="images/logo-sml.png" type="image/x-icon">
+    <script>
+        function preloaderRemove(){
+            const newFunc = () =>{
+                document.getElementById('preloader-img').style.display = 'none';
+            } 
+            setTimeout(newFunc, 500);
+            
+        }
+    </script>
+</head>
+
+<body onload="preloaderRemove()">
+
+    <!-- Preloader Section Starts here -->
+    <section class="preloader" id= "preloader-img"></section>
+    <!-- Preloader Section ends here -->
+
+    <!-- Alert Message starts here -->
+    <div class="alert-msg" id="alert-message">
+        <div class="alert-content" id="alert-msg-content">
+            Sorry, You have entered the area location or domain that we don't Cover
+        </div>
+    </div>
+    <!-- Alert Message ends here -->
+
+    <!-- Navigation panel starts here -->
+    <div class="head">
+        <img src="images/Niyukti Logo Main.png" alt="logo" class="logo">
+        <navbar>
+            <ul>
+                <li><a href="#" class="hover-opa-200">Find Talent</a></li>
+                <li><a href="#" class="hover-opa-200">Find Work</a></li>
+                <li><a href="#" class="hover-opa-200">Why Niyukti?</a></li>
+                <li><a href="#" class="hover-opa-200">About Us</a></li>
+            </ul>
+        </navbar>
+        <div class="search-bar">
+            <form action="#">
+                <input type="text" placeholder="&#x1F50DSearch for your query">
+            </form>
+        </div>
+        <div class="login-btn">
+            <a href="login.html">Login</a>
+        </div>
+        <div class="login-btn signup-btn">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <!-- Navigation panel ends here -->
+
+    <!-- Header container starts here -->
+    <header>
+        <div class="container">
+            <div class="header-texts">
+                <div>
+                    <div class="title">Employment By Your Skills</div>
+                    <div class="description">There is a real danger that the crisis will increase poverty and widen inequalities, we are here to resolve the purpose by providing what you best deserve. 
+                        <br>Search by your Skill, Care and Connection.</div>
+                    <div class="signup-input-bar">
+                        <form action="#" autocomplete="off">
+                            <input type="email" name="email" id="email" placeholder="Sign up using email">
+                            <button type="button">&rarr;</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="images/standing-man-header.png" alt="Header Banner Image">
+            </div>
+        </div>
+    </header>
+    <!-- Header container ends here -->
+
+    <!-- Search field starts here -->
+
+    <section class="search-field">
+        <span class="txt-sz-30">Find work in your area.</span>
+        <br>
+        <form action="search.html" onsubmit="return formFunc()">
+            <span id="locat">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Connaught Place, New Delhi 110001">
+            </span>
+            <span id="categ">
+                <label for="category">Category</label>
+
+                <input type="text" id="category" name="category" placeholder="Plumbing">
+            </span>
+            <span id="sal">
+                <label for="salary">Salary Expectation</label>
+
+                <input type="text" id="salary" name="salary" placeholder="$700 - $1000">
+            </span>
+            <span id="search-btn">
+                <button type="submit">Search</button>
+            </span>
+        </form>
+    </section>
+
+    <!-- Search field ends here -->
+
+    <!-- Trusted brands section starts here -->
+
+    <section class="trusted-brands">
+        Trusted by
+        <div class="wrap-items">
+            <img src="images/brand-logos/Amazon-logo.png" alt="amazon-logo">
+            <img src="images/brand-logos/airbnb-logo.png" alt="airbnb-logo">
+            <img src="images/brand-logos/google-logo.png" alt="google-logo">
+            <img src="images/brand-logos/godaddy-logo.png" alt="godaddy-logo">
+            <img src="images/brand-logos/microsoft-logo.png" alt="microsoft-logo">
+        </div>
+    </section>
+
+    <!-- Trusted brands section ends here -->
+
+    <!-- Categories section starts here -->
+    <section class="categories">
+        Search for your preferred job
+        <center>
+        <div class="wrapper">
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-web-dev.png" alt="web-dev-icon"><br>Sewerage Cleaner</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-plumbing.png" alt="plumbing-icon"><br>Plumbing</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-massage-therapist.png" alt="massage-therapist-icon"><br>Massage Therapist</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-mechanic.png" alt="mechanic-icon"><br>Food Server</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-audiologist.png" alt="audiologist-icon"><br>Audiologist</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-dentist.png" alt="dentist-icon"><br>Brickmason</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-software-developer.png" alt="software-developer-icon"><br>Maid</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-roofer.png" alt="roofer-icon"><br>Roofer</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-driver.png" alt="driver-icon"><br>Bus/Truck Driver</div>
+            </div>
+            <div class="items">
+                <div class="icons"><img src="images/Icons/icon-welder.png" alt="welder-icon"><br>Welder</div>
+            </div>
+        </div>
+        </center>
+    </section>
+    <!-- Categories section ends here -->
+
+    <!-- services card starts here -->
+    <div class="services">
+        <div class="card-wrap">
+            <div class="services-card">
+                <div class="card-overlay">
+                    <span class="mar-pd-fx">For Employers</span>
+                    <div class="gradient-black">
+                        <div class="card-items">House Hold
+                            <span class="services-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate enim accusantium autem ipsa amet.</span>
+                            <span id="arrow">&rarr;</span>
+                        </div>
+                        <div class="card-items" id="change-color">Large Scale
+                            <span class="services-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate enim accusantium autem ipsa amet.</span>
+                            <span id="arrow">&rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-card" id="client">
+                <div class="card-overlay">
+                    <span class="mar-pd-fx">For Clients</span>
+                    <div class="gradient-black">
+                        <div class="card-items">National
+                            <span class="services-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate enim accusantium autem ipsa amet.</span>
+                            <span id="arrow">&rarr;</span>
+                        </div>
+                        <div class="card-items" id="change-color">International
+                            <span class="services-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate enim accusantium autem ipsa amet.</span>
+                            <span id="arrow">&rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services card ends here -->
+
+    <!-- Testimonials section starts here -->
+    <section class="testimonials">
+        <center>
+            <span class="txt-sz-20">What they say?</span>
+            <div class="feedback-wrapper">
+                <div class="feedback" id="align-feedback-containers">
+                    <div class="img-container">
+                        <img src="images/sqr-element-feed.png" alt="graphic-image">
+                    </div><br>
+                    <span id="client-username">Afreen Ali</span>
+                    <span id="quotes">&rdquo;</span>
+                    <span class="feedback-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga distinctio corrupti molestiae unde soluta, vel vitae omnis nemo, consequatur porro autem dignissimos assumenda ratione exercitationem facere pariatur tempore aliquid!</span>
+                </div>
+                <div class="divider-dashed"></div>
+                <div class="feedback">
+                    <div class="img-container" id="client-sec">
+                        <img src="images/sqr-element-feed.png" alt="graphic-image">
+                    </div><br><br>
+                    <span id="client-username">Riya Mehta</span>
+                    <span id="quotes">&rdquo;</span>
+                    <span class="feedback-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga distinctio corrupti molestiae unde soluta, vel vitae omnis nemo, consequatur porro autem dignissimos assumenda ratione exercitationem facere pariatur tempore aliquid!</span>
+                </div>
+            </div>
+        </center>
+    </section>
+    <!-- Testimonial section ends here -->
+
+    <!-- Banner Card starts here -->
+    <section class="banner">
+        <center>
+            <div class="banner-wrapper">
+                <div class="banner-text">Find The Best Talent Here To Grow Your Business..
+                    <button>Get Started</button>
+                </div>
+                <div class="banner-img"><img src="images/banner-img-man.png" alt="banner-image"></div>
+            </div>
+        </center>
+    </section>
+    <!-- Banner card ends here -->
+
+    <!-- Newsletter section starts here -->
+    <section class="newsletter">
+        Join Our Newsletter
+        <span class="newsletter-text">Join Our Community to get regular updates about new job offers and business ideas.</span>
+        <form action="#"><input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email to join">
+            <button type="button">&rarr;</button>
+        </form>
+    </section>
+    <!-- Newsletter section ends here -->
+
+    <!-- Footer section starts here -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="col-01">
+                <span class="menu-head">For Employers</span><br>
+                <div class="footer-list-items">
+                    <ul>
+                        <li>Find Freelancers</li>
+                        <li>Find Workers</li>
+                        <li>Hire Specialists</li>
+                        <li>Business Ideas</li>
+                        <li>Create Account</li>
+                        <li>Help and Support</li>
+                        <li>Events</li>
+                        <li>Join Niyukti Premium</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-02">
+                <span class="menu-head">For Clients</span><br>
+                <div class="footer-list-items">
+                    <ul>
+                        <li>Find your preferred job</li>
+                        <li>Find Work</li>
+                        <li>Join Courses</li>
+                        <li>Create Freelance Account</li>
+                        <li>Profile</li>
+                        <li>Help and Support</li>
+                        <li>Talk to our specialist</li>
+                        <li>Feedback</li>
+                        <li>Join Our Community</li>
+                        <li>Blogs</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-03">
+                <span class="menu-head">Domains</span><br>
+                <div class="footer-list-items">
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Plumbing</li>
+                        <li>Audiologists</li>
+                        <li>VideoGraphy</li>
+                        <li>Photography</li>
+                        <li>Mechanical Support</li>
+                        <li>Dental Support</li>
+                        <li>Healthcare</li>
+                        <li>Software Development</li>
+                        <li>Roofers</li>
+                        <li>Drivers</li>
+                        <li>Welding / Civil Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-04">
+                <span class="menu-head">Support</span><br>
+                <div class="footer-list-items">
+                    <ul>
+                        <li>Help & Support</li>
+                        <li>Trust & Safety</li>
+                        <li>Selling on Niyukti</li>
+                        <li>Buying on Niyukti</li>
+                        <li>Niyukti Premium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hz-line"></div>
+        <div class="footer-end">
+            <div class="footer-end-wrapper">
+                <img src="images/Niyukti Logo Clone Footer.png" alt="niyukti-logo"> 
+                &nbsp;<span>All rights reserved to niyukti.com - &COPY; Copyright 2021</span>
+            </div>
+            <!-- <div class="footer-end-wrapper"></div>
+                &nbsp;<span>Follow us:</span>
+                <img src="images/Icons/facebook.png" alt="facebook-icon" class="footer-social-icon" id="facebook">
+                <img src="images/Icons/instagram.png" alt="instagram-icon" id="footer-social-icon">
+                <img src="images/Icons/twitter.png" alt="twitter-icon" id="footer-social-icon">
+            </div> -->
+
+            
+        </div>
+    </footer>
+    <!-- Footer Section ends here -->
+</body>
+<script src="js/index.js"></script>
+
+</html>

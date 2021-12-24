@@ -1,0 +1,327 @@
+@font-face {
+  font-family: bytefont-light;
+  src: url("../fonts/neus-hass-light.ttf");
+}
+@font-face {
+  font-family: bytefont-medium;
+  src: url("../fonts/neus-hass-medium.ttf");
+}
+@font-face {
+  font-family: bytefont-bold;
+  src: url("../fonts/neus-hass-bold.ttf");
+}
+@font-face {
+  font-family: bodoni;
+  src: url("../fonts/bodoni-72-smallcaps.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: bytefont-light, sans-serif;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/preloader.gif"), #f7f7f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  transition: all 1s ease;
+  z-index: 1000;
+}
+.head {
+  width: 93%;
+  padding: 0.7em 0px;
+  margin: 0px auto;
+  font-size: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.head .logo {
+  width: 2em;
+  flex: 0.08;
+}
+.head navbar {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+}
+.head navbar ul {
+  display: flex;
+  font-size: 0.4em;
+  flex: 1;
+  justify-content: space-between;
+}
+.head > navbar > ul > li {
+  display: block;
+  font-size: 1em;
+}
+.head navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.4;
+  font-family: bytefont-medium;
+}
+.head navbar ul li a:hover {
+  opacity: 1;
+}
+.head .search-bar {
+  flex: 0.23;
+  height: 1em;
+}
+.head .search-bar form input {
+  width: 20em;
+  height: 2.5em;
+  border-radius: 3em;
+  border: 1px solid #707070;
+  position: absolute;
+  top: 3.1em;
+  padding: 0px 1em;
+  outline: none;
+}
+.login-btn {
+  font-size: 0.4em;
+  flex: 0.04;
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+}
+.login-btn a {
+  text-decoration: none;
+  color: #000;
+}
+.signup-btn {
+  background: #f48c06;
+  flex: 0.1;
+  border-radius: 3em;
+  font-family: bytefont-medium;
+  justify-content: center;
+  box-shadow: 0em 0.2em 5em rgba(0, 0, 0, 0.3);
+}
+.signup-btn a {
+  color: #fff;
+}
+.txt-sz-30 {
+  font-size: 1.2em;
+  font-family: bytefont-bold;
+}
+.txt-sz-20 {
+  font-size: 1.5em;
+  font-family: bodoni, sans-serif;
+  color: #3c096c;
+}
+.mar-pd-fx {
+  padding: 1em;
+}
+
+.newsletter {
+  min-width: 60%;
+  font-family: bytefont-light, sans-serif;
+  box-shadow: 0 0.2em 3em rgba(0, 0, 0, 0.4);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  color: #240046;
+  padding: 2em;
+  justify-content: center;
+  background: #fff;
+  border-radius: 0.7em;
+  position: absolute;
+  border: 0.3em solid #59189a;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3em;
+  z-index: 999;
+}
+.newsletter .newsletter-text {
+  font-family: bytefont-bold;
+  font-size: 1.2em;
+  color: #000;
+}
+.newsletter form {
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+.newsletter form #newsletter-email {
+  width: 70%;
+  height: 3em;
+  border-radius: 3em;
+  border: 0.2em solid #707070;
+  padding: 0 2em;
+  outline: none;
+}
+.newsletter form button {
+  min-width: 3em;
+  height: 3em;
+  border: none;
+  border-radius: 50%;
+  background: #f48c06;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 1em;
+  box-shadow: 0.1em 0.2em 6em rgba(244, 140, 6, 0.5);
+}
+.newsletter form button:hover {
+  box-shadow: 0 0.1em 3em rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+footer {
+  width: 100%;
+  background: #10002b;
+  margin: 12em auto 0 auto;
+  padding: 0.2em 0 2em 0;
+  color: white;
+  font-size: 1em;
+}
+footer .footer-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10em;
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-wrapper .col-01,
+.col-02,
+.col-03,
+.col-04 {
+  min-width: 12em;
+  /* background: blue; */
+  margin-top: 0.9em;
+  color: rgba(255, 255, 255, 0.4);
+  filter: contrast(1.2);
+  font-family: bytefont-light;
+}
+footer .footer-wrapper .menu-head {
+  font-size: 1.3em;
+  font-family: bytefont-bold, sans-serif;
+  color: #fff;
+}
+footer .footer-wrapper .footer-list-items ul li {
+  display: block;
+  margin-top: 0.6em;
+  cursor: pointer;
+}
+footer .footer-wrapper .footer-list-items ul li:hover {
+  color: #fff;
+  /* transition: all 0.2s ease-in; */
+}
+footer .hz-line {
+  width: 90%;
+  margin: 3em auto;
+  border-bottom: 0.01em solid rgba(255, 255, 255, 0.2);
+}
+footer .footer-end {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 1em;
+  justify-content: space-between;
+}
+footer .footer-end .footer-end-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+footer .footer-end img {
+  width: 7em;
+}
+footer .footer-end span {
+  height: 3em;
+  line-height: 3em;
+  margin-left: 1em;
+}
+footer #footer-social-icon {
+  width: 1.7em;
+  height: 2em;
+}
+footer #facebook {
+  width: 1em;
+  height: 1.7em;
+}
+
+.trusted-brands {
+  max-width: 93%;
+  font-family: bodoni, sans-serif;
+  font-size: 1.5em;
+  margin: 3em auto;
+  color: #3c096c;
+  display: flex;
+  flex-direction: column;
+}
+.trusted-brands .wrap-items {
+  max-width: 40em;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  justify-content: space-between;
+  margin: 2em auto;
+}
+.trusted-brands .wrap-items img {
+  max-width: 8em;
+  filter: contrast(0);
+  opacity: 0.5;
+}
+.trusted-brands .wrap-items img:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 1185px) {
+  .search-bar {
+    display: none;
+  }
+  .head navbar {
+    flex: 0.5;
+    /* background: red; */
+    font-size: 0.8em;
+  }
+  .head .signup-btn {
+    flex: 0.15;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .head navbar {
+    display: none;
+  }
+  .head .signup-btn {
+    display: none;
+  }
+  .head .login-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .trusted-brands {
+    font-size: 1.2em;
+  }
+  .footer-end {
+    font-size: 0.1em;
+  }
+  .footer-end span {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 0.2em;
+    margin-left: 0;
+  }
+}

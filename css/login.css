@@ -1,0 +1,214 @@
+@font-face {
+  font-family: bytefont-light;
+  src: url("../fonts/neus-hass-light.ttf");
+}
+@font-face {
+  font-family: bytefont-medium;
+  src: url("../fonts/neus-hass-medium.ttf");
+}
+@font-face {
+  font-family: bytefont-bold;
+  src: url("../fonts/neus-hass-bold.ttf");
+}
+@font-face {
+  font-family: bodoni;
+  src: url("../fonts/bodoni-72-smallcaps.ttf");
+}
+body,
+html {
+  margin: 0 0;
+  padding: 0 0;
+  font-size: 1em;
+  font-family: bytefont-light;
+  background: #f0f0fd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 1em;
+  margin-top: 2em;
+  box-shadow: 0 0.2em 4em rgba(0, 0, 0, 0.1);
+}
+.login-container .login-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.login-wrapper .login-side-panel {
+  flex: 0.5;
+  background: #3c096c;
+  border-radius: 1em 0 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: bytefont-medium;
+  font-size: 0.8em;
+  color: #fff;
+}
+.login-side-panel .login-signup-btn {
+  color: #fff;
+  padding: 0.7em 2em;
+  margin: 1.5em 0;
+  background: #1a0046;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+}
+.login-side-panel img {
+  width: 70%;
+  padding: 1em 0;
+}
+.login-field {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 4em 0;
+}
+
+.login-field .login-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  align-self: flex-start;
+  /* background: red; */
+}
+.login-field-wrapper .login-heading {
+  font-size: 1.5em;
+  font-family: bytefont-bold;
+  padding: 0.5em 0 0.8em 0;
+  color: #3c096c;
+}
+.login-field-wrapper .sml-descr {
+  font-size: 0.8em;
+  margin-bottom: 1.8em;
+  opacity: 0.5;
+}
+
+.google-account-validate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #dee0f4;
+  border-radius: 3em;
+  padding: 0.8em;
+  justify-content: center;
+  border: 0.1em solid #707070;
+  font-size: 0.7em;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+.login-field-wrapper .google-account-validate img {
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+
+.login-field-wrapper .or-login-section {
+  display: flex;
+  font-size: 0.6em;
+  margin: 2em 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+}
+.or-login-section span {
+  margin: 0 0.5em;
+}
+.or-login-section div {
+  border-bottom: 0.1em solid #000;
+  flex: 0.3;
+}
+
+.login-field-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.login-field-wrapper form span {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.login-field-wrapper form span input {
+  background: transparent;
+  border: 0.1em solid #707070;
+  padding: 0.7em 1.5em;
+  border-radius: 3em;
+  outline: none;
+  color: #000;
+  opacity: 0.5;
+  margin: 1em 0 0 0;
+}
+.login-field-wrapper form input:focus {
+  border: 0.1em solid #3c096c;
+}
+.login-field-wrapper form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 0;
+}
+.login-field-wrapper form div .remember-me {
+  font-size: 0.8em;
+}
+.login-field-wrapper form div span {
+  color: #3c096c;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.login-field-wrapper form button {
+  padding: 0.8em 0;
+  background: #3c096c;
+  color: #fff;
+  border: none;
+  border-radius: 3em;
+  margin-top: 0.3em;
+  cursor: pointer;
+}
+
+.login-field-wrapper form button:hover,
+.login-signup-btn:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  box-shadow: 0 0.2em 2em rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.copyright-text {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+  font-family: bytefont-medium;
+  margin-top: 1.2em;
+}
+
+@media screen and (max-width: 875px) {
+  .login-wrapper .login-side-panel {
+    display: none;
+  }
+  .login-field {
+    flex: 1;
+  }
+  .login-wrapper .login-field-wrapper {
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 95%;
+  }
+  .copyright-text {
+    font-size: 0.7em;
+  }
+}
